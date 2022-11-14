@@ -13,11 +13,13 @@ import RemainingPlayers from "./components/RemainingPlayers/RemainingPlayers";
 import Roadmap from "./components/Roadmap/Roadmap";
 import FAQ from "./components/FAQ/FAQ";
 import Footer from "./components/Footer/Footer";
+import useWindowSize from "./components/helpers/useWindowSize";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [width, setWidth] = useState(0);
+  const currentWidth = useWindowSize();
   const handleScroll = (e) => {
     if (e.target.scrollingElement.scrollTop < 10) setScrolled(false);
     if (e.target.scrollingElement.scrollTop >= 10) setScrolled(true);
@@ -34,8 +36,9 @@ function App() {
       window.removeEventListener("scroll", handleScroll);
     };
   });
+  console.log("currentWidth", currentWidth);
   return (
-    <div className="App">
+    <div>
       <Header scrolled={scrolled} showMenu={showMenu} setShowMenu={setShowMenu} />
       <HeroScreen />
       <GameDescr />

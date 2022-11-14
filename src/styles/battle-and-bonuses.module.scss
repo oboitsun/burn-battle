@@ -48,7 +48,7 @@
   }
 }
 .caption {
-  @apply text-white font-black uppercase leading-none transition-all relative;
+  @apply text-white font-black uppercase leading-none transition-all relative text-center;
 }
 .about {
   @apply absolute top-full left-1/2 z-10 w-full text-center text-xs text-white  normal-case italic font-normal;

@@ -23,6 +23,8 @@
 body {
   font-family: "Mont";
   min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
   background: #da903f;
 }
 .wrap {

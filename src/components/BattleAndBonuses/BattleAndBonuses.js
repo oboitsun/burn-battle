@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import styles from "../../styles/battle-and-bonuses.scss";
+import styles from "../../styles/battle-and-bonuses.module.scss";
 // const bonuses = [
 //   "shield",
 //   "timer",

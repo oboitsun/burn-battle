@@ -9,7 +9,7 @@ export default function RemainingPlayers() {
   const size = useWindowSize();
   const [avatarSize, setAvatarSize] = React.useState(58);
   const [gapSize, setGapSize] = React.useState(20);
-  const [currentTab, setCurrentTab] = React.useState(true);
+  const [currentTab, setCurrentTab] = React.useState("");
   const [searchStr, setSearchString] = React.useState("");
   const rows = ["", "", "", "", ""];
   const cols = new Array(players?.length / 5).fill("");
@@ -32,7 +32,7 @@ export default function RemainingPlayers() {
         <p className="paragraph text-center mt-2 mb-5">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry
         </p>
-        <TabsAndSearch />
+        {/* <TabsAndSearch /> */}
         <div className={styles.playersContainer}>
           <div
             className={`grid grid-flow-col ${styles.grid} gap-5 xl:gap-9 grid-rows-5 relative mx-auto max-w-max`}
