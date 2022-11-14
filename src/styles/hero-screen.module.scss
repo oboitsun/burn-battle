@@ -3,19 +3,23 @@
   height: 100%;
   padding-top: 192px;
 
-  @apply relative h-full flex flex-col items-center pb-[112px];
+  @apply relative h-full flex flex-col items-center;
+  padding-bottom: 112px;
   .bg {
     @apply w-full h-full object-cover relative;
   }
   .motto {
-    @apply relative text-white text-[40px]  leading-[36px] text-center font-black uppercase;
+    @apply relative text-white  text-center font-black uppercase;
+    font-size: 40px;
+    line-height: 36px;
   }
   .subheading {
     @apply text-brown-300 italic text-base  lg:text-lg relative mt-2 mb-4 text-center;
   }
   @media (min-width: 1024px) {
     .motto {
-      @apply text-[56px]  leading-[50px];
+      font-size: 56px;
+      line-height: 50px;
     }
     .subheading {
       @apply text-lg;
@@ -28,7 +32,8 @@
       max-height: 850px;
     }
     .motto {
-      @apply text-[64px]  leading-[55px];
+      font-size: 64px;
+      line-height: 55px;
     }
     .subheading {
       @apply text-lg;

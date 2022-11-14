@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import styles from "./WillYou.module.scss";
+import styles from "../../styles/will-you.module.scss";
 export default function WillYou() {
   const [ref, inView, entry] = useInView({
     /* Optional options */

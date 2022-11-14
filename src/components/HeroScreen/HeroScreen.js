@@ -2,7 +2,7 @@ import React from "react";
 import Btn from "../Btn/Btn";
 import Timer from "../Timer/Timer";
 import HeroBG from "./HeroBG";
-import styles from "./HeroScreen.module.scss";
+import styles from "../../styles/hero-screen.module.scss";
 import SplashCarousel from "./Slider";
 export default function HeroScreen() {
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Btn from "../Btn/Btn";
-import styles from "./Header.module.scss";
+import styles from "../../styles/header.module.scss";
 import Menu from "./Menu";
 import ConnectWallet from "../ConnectWallet/ConnectWallet";
 

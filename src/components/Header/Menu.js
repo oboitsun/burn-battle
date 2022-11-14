@@ -1,6 +1,6 @@
 import React from "react";
 import Btn from "../Btn/Btn";
-import styles from "./Menu.module.scss";
+import styles from "../../styles/menu.module.scss";
 import { Link } from "react-scroll";
 const header_anchors = [
   { href: "chars", text: "Charecters" },

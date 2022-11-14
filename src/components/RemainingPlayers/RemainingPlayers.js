@@ -2,7 +2,7 @@ import React from "react";
 import useWindowSize from "../helpers/useWindowSize";
 import PlayerAvatar from "./PlayerAvatar";
 import { players } from "./playersDummyDB";
-import styles from "./RemainingPlayers.module.scss";
+import styles from "../../styles/remaining-players.module.scss";
 import TabsAndSearch from "./TabsAndSearch";
 
 export default function RemainingPlayers() {

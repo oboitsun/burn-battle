@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./SimpleFun.module.scss";
+import styles from "../../styles/simple-fun.module.scss";
 import SimpleFunSlider from "./SimpleFunSlider";
 export default function SimpleFun() {
   return (

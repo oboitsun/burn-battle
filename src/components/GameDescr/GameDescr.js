@@ -1,6 +1,6 @@
 import React from "react";
 import Characters from "./Characters";
-import styles from "./GameDescr.module.scss";
+import styles from "../../styles/game-descr.module.scss";
 export default function GameDescr() {
   return (
     <div id={"chars"} className={styles.root}>

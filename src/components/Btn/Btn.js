@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Btn.module.scss";
+import styles from "../../styles/btn.module.scss";
 
 export default function Btn({ width = "w-max", color, containerClassName, children, ...props }) {
   return (

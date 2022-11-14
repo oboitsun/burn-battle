@@ -3,7 +3,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Autoplay, Pagination } from "swiper";
 import Btn from "../Btn/Btn";
-import styles from "./Roadmap.module.scss";
+import styles from "../../styles/roadmap.module.scss";
 import RoadmapPoint from "./RoadmapPoint";
 import { phases } from "./phases";
 import useWindowSize from "../helpers/useWindowSize";

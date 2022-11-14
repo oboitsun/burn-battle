@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Char.module.scss";
+import styles from "../../styles/char.module.scss";
 import Btn from "../Btn/Btn";
 export default function Char({ char }) {
   return (

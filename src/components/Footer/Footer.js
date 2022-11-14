@@ -1,6 +1,6 @@
 import React from "react";
 import Btn from "../Btn/Btn";
-import styles from "./Footer.module.scss";
+import styles from "../../styles/footer.module.scss";
 export default function Footer() {
   return (
     <div className={styles.root}>

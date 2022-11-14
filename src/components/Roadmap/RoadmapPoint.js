@@ -1,6 +1,6 @@
 import React from "react";
-import { phases } from "./phases";
-import styles from "./RoadmapPoint.module.scss";
+
+import styles from "../../styles/roadmap-point.module.scss";
 const points = [
   {
     checked: true,
