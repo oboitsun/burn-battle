@@ -1,0 +1,52 @@
+.backdrop {
+  @apply fixed z-40  w-full h-full top-0 left-0 flex items-center justify-center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%);
+  &.show {
+    pointer-events: all;
+    opacity: 1;
+  }
+}
+.menu {
+  width: 100%;
+  max-width: 334px;
+  border-radius: 18px;
+  border: 3px solid black;
+  position: relative;
+  .closeMenu {
+    @apply absolute w-10 h-10 -right-5 -top-5 z-20;
+  }
+  .inner {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 24px;
+    transition: color 0.2s;
+    background: linear-gradient(180deg, #eaa800 0%, #7e3500 100%) padding-box,
+      linear-gradient(0deg, #eaa800 0%, #7e3500 100%) border-box;
+    border-radius: 12px;
+    border: 2px solid transparent;
+
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 0.8;
+  }
+  @media (min-width: 425px) {
+    max-width: 364px;
+    .inner {
+      padding: 32px;
+    }
+  }
+}
+.divider {
+  @apply w-full h-0.5 bg-black/10 flex-shrink-0;
+}

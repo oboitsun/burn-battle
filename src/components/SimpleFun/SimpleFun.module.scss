@@ -1,0 +1,23 @@
+.card {
+  width: 100%;
+  padding-bottom: 69%;
+  position: relative;
+
+  border-radius: 18px;
+  border: 3px solid black;
+  .inner {
+    @apply absolute w-full h-full top-0 left-0;
+
+    border-radius: 12px;
+    border: 2px solid transparent;
+    padding: 12px;
+    background: linear-gradient(180deg, #da903f 0%, #da903f 100%) padding-box,
+      linear-gradient(0deg, #eaa800 0%, #7e3500 100%) border-box;
+  }
+}
+.slideHeading {
+  @apply font-black text-brown-500 uppercase text-2xl leading-none text-center mt-5 mb-2;
+}
+.slideDescr {
+  @apply font-normal text-black italic text-sm leading-relaxed text-center;
+}

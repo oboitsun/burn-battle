@@ -1,0 +1,28 @@
+.question {
+  width: 100%;
+
+  border-radius: 12px;
+  border: 2px solid black;
+  font-weight: 900;
+  color: white;
+  line-height: 0.9;
+  font-size: 16px;
+  position: relative;
+  .inner {
+    width: 100%;
+    height: 100%;
+    @apply flex items-center;
+    cursor: pointer;
+    padding: 12px;
+    transition: color 0.2s;
+    background: linear-gradient(180deg, #707284 -0.37%, #454651 99.94%) padding-box,
+      linear-gradient(0deg, #707284 -0.37%, #454651 99.94%) border-box;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    &.bronze {
+      background: linear-gradient(180deg, #eaa800 0%, #7e3500 100%) padding-box,
+        linear-gradient(0deg, #eaa800 0%, #7e3500 100%) border-box;
+    }
+  }
+}

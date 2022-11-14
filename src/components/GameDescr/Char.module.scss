@@ -1,0 +1,21 @@
+.card {
+  width: 100%;
+  max-width: max-content;
+  border-radius: 18px;
+  border: 3px solid black;
+  @apply bg-brown-50;
+  .inner {
+    @apply flex flex-col items-center;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    padding: 12px;
+    // background: linear-gradient(180deg, #da903f 0%, #da903f 100%) padding-box,
+    //   linear-gradient(0deg, #eaa800 0%, #7e3500 100%) border-box;
+  }
+  .name {
+    @apply font-black uppercase text-base leading-none mb-1 mt-2;
+  }
+  .id {
+    @apply font-normal text-xs leading-none mb-1;
+  }
+}

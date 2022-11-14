@@ -1,0 +1,9 @@
+.rightGradient {
+  @apply absolute right-0  top-0 h-full w-20 lg:w-40 z-10;
+  background: linear-gradient(
+    270deg,
+    #da903f 0%,
+    rgba(218, 144, 63, 0.81) 15.83%,
+    rgba(218, 144, 63, 0) 100%
+  );
+}

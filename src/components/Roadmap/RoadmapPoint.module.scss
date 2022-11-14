@@ -1,0 +1,50 @@
+.root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  .line {
+    @apply absolute top-8 left-0 h-1 bg-black w-full;
+  }
+  .card {
+    width: 64px;
+    height: 64px;
+    @apply flex items-center justify-center relative;
+    border-radius: 12px;
+    padding: 12px;
+    border: 3px solid black;
+    img {
+      @apply relative;
+    }
+    .inner {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(180deg, #707284 -0.37%, #454651 99.94%) padding-box,
+        linear-gradient(0deg, #707284 -0.37%, #454651 99.94%) border-box;
+      border-radius: 8px;
+      border: 2px solid transparent;
+      &.bronze {
+        background: linear-gradient(180deg, #eaa800 0%, #7e3500 100%) padding-box,
+          linear-gradient(0deg, #eaa800 0%, #7e3500 100%) border-box;
+      }
+    }
+  }
+  .heading {
+    @apply uppercase text-white font-black text-2xl leading-none mt-5 mb-2;
+  }
+  .descr {
+    @apply text-sm leading-relaxed text-white italic font-normal;
+  }
+  .point {
+    @apply flex gap-2 items-center;
+    .checkbox {
+      @apply w-4 h-4 rounded border-brown-500 border-2;
+      &.checked {
+        @apply bg-brown-500;
+      }
+    }
+  }
+}

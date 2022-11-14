@@ -1,0 +1,79 @@
+.root {
+}
+.avatar {
+  width: 58px;
+  height: 58px;
+  border-radius: 12px;
+  border: 2px solid black;
+  font-weight: 900;
+  color: white;
+  line-height: 0.9;
+  font-size: 16px;
+  position: relative;
+  @apply bg-brown-50;
+  .inner {
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+    padding: 4px;
+    transition: color 0.2s;
+    // background: linear-gradient(180deg, #707284 -0.37%, #454651 99.94%) padding-box,
+    //   linear-gradient(0deg, #707284 -0.37%, #454651 99.94%) border-box;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    // &.bronze {
+    //   background: linear-gradient(180deg, #eaa800 0%, #7e3500 100%) padding-box,
+    //     linear-gradient(0deg, #eaa800 0%, #7e3500 100%) border-box;
+    // }
+    &.red {
+      background: linear-gradient(180deg, #da3f3f 0%, #a80d0d 100%) padding-box,
+        linear-gradient(0deg, #da3f3f 0%, #a80d0d 100%) border-box;
+    }
+    .burnt {
+      @apply absolute top-1/2 left-1/2 uppercase font-black text-white text-xs;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+  @media (min-width: 1280px) {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.playersContainer {
+  @apply w-full overflow-x-auto  mx-auto pb-5 mb-10;
+  &::-webkit-scrollbar {
+    height: 16px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #440000;
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border: 2px solid transparent;
+    background: linear-gradient(180deg, #eaa800 0%, #7e3500 100%) padding-box,
+      linear-gradient(0deg, #eaa800 0%, #7e3500 100%) border-box;
+    position: relative;
+    // background: linear-gradient(180deg, #eaa800 0%, #7e3500 100%);
+    border-radius: 4px;
+  }
+}
+.grid {
+  grid-template-columns: repeat(5, 58px);
+  @media (min-width: 1280px) {
+    grid-template-columns: repeat(5, 64px);
+  }
+}
+.line {
+  &Hor {
+    height: 1px;
+    @apply absolute bg-brown-500 left-0;
+  }
+  &Ver {
+    height: 100%;
+    width: 1px;
+    @apply absolute bg-brown-500 top-0;
+  }
+}

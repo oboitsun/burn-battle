@@ -1,0 +1,55 @@
+.root {
+  @apply fixed top-0 left-0 w-full z-30 py-8 transition-all;
+  &.scrolled {
+    @apply py-2;
+    .logo {
+      @apply w-12 opacity-0;
+    }
+  }
+  .logo {
+    @apply w-20 transition-all;
+  }
+  .leftSide {
+    @apply items-center gap-4 hidden;
+  }
+  .navbar {
+    @apply flex items-center justify-between;
+  }
+  @media (min-width: 1024px) {
+    &.scrolled {
+      @apply py-2 bg-brown-400/80 shadow-md;
+      .navbar {
+        height: 46px;
+      }
+      .logo {
+        @apply opacity-100;
+      }
+    }
+    .leftSide {
+      @apply flex;
+    }
+    .logo {
+      @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10;
+    }
+  }
+  @media (min-width: 1280px) {
+    @apply py-14;
+    &.scrolled {
+      @apply py-2 bg-brown-400/80 shadow-md;
+      .navbar {
+        height: 46px;
+      }
+      .logo {
+        @apply opacity-100;
+        width: 60px;
+      }
+    }
+    .navbar {
+      @apply transition-all;
+      height: 96px;
+    }
+    .logo {
+      width: 120px;
+    }
+  }
+}

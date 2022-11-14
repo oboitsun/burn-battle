@@ -1,0 +1,33 @@
+.root {
+  @apply mb-20 lg:mb-[100px];
+}
+.card {
+  width: 100%;
+  @apply bg-brown-50;
+  border-radius: 18px;
+  border: 3px solid black;
+  overflow: hidden;
+  .inner {
+    height: 100%;
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 12px 16px;
+    transition: color 0.2s;
+    background: linear-gradient(180deg, #ffc765 -0.37%, #ffc765 99.94%) padding-box,
+      linear-gradient(180deg, #7e3500 -0.37%, #eaa800 99.94%) border-box;
+    border-radius: 14px;
+    border: 2px solid transparent;
+    &.loser {
+      background: linear-gradient(180deg, #707284 -0.37%, #454651 99.94%) padding-box,
+        linear-gradient(0deg, #707284 -0.37%, #454651 99.94%) border-box;
+    }
+  }
+}
+
+.role {
+  @apply font-black text-black uppercase leading-none text-2xl text-center;
+}
