@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
   font-family: "Mont";
   src: url("./fonts/Mont-Heavy.woff");
@@ -71,11 +72,10 @@ body {
 .paragraph {
   @apply font-normal italic text-black text-xs leading-5 lg:text-sm;
 }
-.HeroScreen__Slider {
-  .swiper-wrapper {
-    display: flex;
-    align-items: center;
-  }
+
+.HeroScreen__Slider .swiper-wrapper {
+  display: flex;
+  align-items: center;
 }
 .slide-wrap {
   width: 100%;
@@ -100,19 +100,18 @@ body {
     max-width: calc(1024px + 40px);
   }
 }
-.simple-fun-slider {
-  &.swiper {
-    padding-bottom: 40px;
-  }
-  .swiper-pagination-bullet {
-    width: 16px;
-    height: 16px;
-    border: 2px solid #000000;
-    border-radius: 4px;
-    background: transparent;
-    opacity: 1;
-    &-active {
-      background: #000000;
-    }
-  }
+
+.simple-fun-slider.swiper {
+  padding-bottom: 40px;
+}
+.simple-fun-slider.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  background: transparent;
+  opacity: 1;
+}
+.simple-fun-slider.swiper-pagination-bullet-active {
+  background: #000000;
 }
