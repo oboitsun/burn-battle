@@ -8,6 +8,7 @@ const header_anchors = [
   { href: "remaining-players", text: "Remaining Players" },
   { href: "roadmap", text: "roadmap" },
   { href: "faq", text: `Faq's` },
+  { href: "#", text: `Whitepaper` },
 ];
 const linkProps = {
   spy: true,
